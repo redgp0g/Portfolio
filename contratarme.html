@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Pessoal</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">portfolio<b>.</b></div>
+            <ul class="navItems">
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="sobre.html">sobre</a></li>
+                <li><a href="habilidades.html">habilidades</a></li>
+                <li><a href="projetos.html">projetos</a></li>
+            </ul>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/guilherme-gordiano-bb97991b6/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/gordianoguilherme/"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/REDGP0G"><i class="fa fa-github"></i></a>
+            </div>
+        </nav>
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <form id="form" method="post">
+                        <h2>Formulário de Contratação</h2>
+                        <div class="inputbox">
+                            <ion-icon name="business-outline"></ion-icon>
+                            <input id="empresa" name="empresa" type="text" required>
+                            <label for="">Empresa</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input id="email" name="email"  type="email" required>
+                            <label for="">Email</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="document-text-outline"></ion-icon>
+                            <textarea id="message" name="message" cols="35" rows="5" required></textarea>
+                            <label for="">Mensagem</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <input type="number" id="phone" name="phone" required>
+                            <label for="">Telefone</label>
+                        </div>
+                        <button id="btn">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function(e){
+        e.preventDefault();
+        var empresa = document.getElementById('empresa').value,
+            email = document.getElementById('email').value,
+            message = document.getElementById('message').value,
+            phone = document.getElementById('phone').value,
+            body = 'Empresa:' + empresa + '<br/> Email:' + email + '<br/> Mensagem:' + message + '<br/> Número: ' + phone;
+        Email.send({
+            SecureToken : "756c46a8-e62c-4f09-9fb3-40f17e3daaab",
+            To : 'guilhermeg2004@gmail.com',
+            From : 'guilhermeg2004@gmail.com',
+            Subject : 'Mensagem de ' + empresa + 'sobre Contratação',
+            Body : body
+}).then(
+);
+    alert('Mensagem Enviada com Sucesso');
+    document.getElementById('form').reset();
+    })
+</script>
+</body>
+</html>

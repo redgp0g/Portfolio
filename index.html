@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Pessoal</title>
+</head>
+
+<body>
+    <h1 id="aviso">Esse site está configurado para acesso apenas em computadores</h1>
+    <div class="container">
+        <nav>
+            <div class="logo">portfolio<b>.</b></div>
+            <ul class="navItems">
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="sobre.html">sobre</a></li>
+                <li><a href="habilidades.html">habilidades</a></li>
+                <li><a href="projetos.html">projetos</a></li>
+            </ul>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/guilherme-gordiano-bb97991b6/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/gordianoguilherme/"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/REDGP0G"><i class="fa fa-github"></i></a>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Olá</span>
+                <h1>Eu sou<br> <span class="multiText">Programador</span></h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam magnam ad eum doloremque, obcaecati quos repellendus tempore nisi accusantium, cumque itaque cupiditate, cum illo delectus veniam voluptates qui quibusdam!</p>
+                <div class="btns">
+                    <a href="eu.png" download><button>Baixar Currículo</button></a>
+                        <button onclick="location.href='contratarme.html';">Contratar Me</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="splash.png" id="splash">
+                    <img src="eu.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText",{
+            strings : ["programador","autodidata","designer","gamer"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500
+        })
+    </script>
+</body>
+</html>
