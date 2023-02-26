@@ -255,9 +255,7 @@ textarea:focus ~ label{
     top: -5px;
 }
 
-textarea{
-    resize: none;
-}
+
 .inputbox input,textarea{
     width: 103%;
     height: 50px;
@@ -267,6 +265,10 @@ textarea{
     font-size: 1em;
     padding: 35px 0 5px;
     color: #fff;
+}
+textarea{
+    resize: none;
+    height: 70px;
 }
 .inputbox ion-icon{
     position: absolute;
@@ -288,6 +290,11 @@ textarea{
     font-size: 1em;
     font-weight: 600;
     color: black;
+    transition: all .45s;
+}
+#btn:hover{
+    background: #000000;
+    color:#fff
 }
 section{
     padding: 160px 15% 120px;
