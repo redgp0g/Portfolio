@@ -521,3 +521,52 @@ span{
     }
 }
 
+@media (max-width: 920px){
+    .sobre{
+        grid-template-columns: 1fr;
+    }
+    .sobre-img{
+        text-align: center;
+        order: 2;
+    }
+    .sobre-img img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 840px) {
+    #menu-icon{
+        display: block;
+    }
+    .navItems{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #f3f5f8;
+        text-align: left;
+        transition: all .45s ease;
+    }
+    .icons{
+        position: absolute;
+        top: 380px;
+        right: 0;
+        display: flex;
+        left: 0;
+        background: #f3f5f8;
+        text-align: left;
+        transition: all .45s ease;
+    }
+    .logo{
+        z-index: 1000;
+    }
+    nav{
+        background: #f3f5f8;
+    border-bottom: 1px solid #7f00ff;
+    padding: 12px 15%;
+    }
+}
