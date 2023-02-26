@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&dispay=swap');
+:root{
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font:1.1rem;
+}
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -147,7 +156,7 @@ h1{
 p{
     display: block;
     width: 100%;
-    font-size: 1.2em;
+    font-size: var(--p-font);
 }
 .btns{
      width: 100%;
@@ -315,7 +324,7 @@ span{
     border-radius: 8px;
 }
 .sobre-text h2{
-    font-size: 3rem;
+    font-size: var(--h2-font);
     line-height: 1;
 }
 .sobre-text h4{
@@ -327,7 +336,7 @@ span{
 }
 .sobre-text p{
     color: #444e53;
-    font-size: 1.1rem;
+    font-size: var(--p-font);
     line-height: 1.8;
     margin-bottom: 4rem;
 }
@@ -343,7 +352,7 @@ span{
     margin-bottom: 15px;
 }
 .main-text h2{
-    font-size: 3rem;
+    font-size: var(--h2-font);
     line-height: 1;
 }
 .habilidades-content{
@@ -371,7 +380,7 @@ span{
 }
 .box p{
     color: #444e53;
-    font-size: 1rem;
+    font-size: var(--p-font);
     line-height: 1.8;
     margin-bottom: 25px;
 }
@@ -440,7 +449,7 @@ span{
     margin-bottom: 15px;
 }
 .layer p{
-    font-size: 1rem;
+    font-size: var(--p-font);
     line-height: 1.8;
 }
 .layer ion-icon{
@@ -460,3 +469,55 @@ span{
 .row:hover .layer{
     height: 100%;
 }
+.end{
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: #333333;
+}
+.last-text p{
+    color:#f3f5f8;
+    font-size: 14px;
+}
+
+.top ion-icon{
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #f3f5f8;
+    background: #7f00ff;
+}@media(max-width: 1680px){
+    nav{
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+    nav.sticky{
+        padding: 10px 2.5%;
+        transition: .1s;
+    }
+    section{
+        padding: 110px 3% 60px;
+    }
+    .end{
+        padding: 15px 3%;
+    }
+}
+
+@media (max-width: 500px){
+    .form-box{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 1100px) {
+    :root{
+        --big-font: 4rem;
+        --h2-font: 2.5rem;
+        --p-font: 1rem;
+        transition: .1s;
+    }
+}
+
