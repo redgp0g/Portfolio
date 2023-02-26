@@ -14,7 +14,7 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    height: 80px;
+    height: 10vh;
     line-height: 80px;
     z-index: 111;
 }
@@ -58,7 +58,7 @@ b{
 .wrapper{
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     justify-content: center;
     align-items: center;
     padding: 0 10%;
@@ -68,8 +68,8 @@ b{
 .wrapper::before{
     position: absolute;
     content: '';
-    height: 600px;
-    width: 600px;
+    height: 550px;
+    width: 550px;
     border-radius: 50%;
     left: -12%;
     top: 40%;
@@ -185,24 +185,16 @@ button:hover{
     word-break: normal;
     text-align: center;
 }
-@media(max-width:1300px) {
-    #aviso{
-        display: block;
-    }
-    .wrapper,.container{
+@media(max-width:1700px) {
+    .cols1{
         display: none;
     }
 }
-@media(min-width:1300px) {
-    #aviso{
-        display: none;
-    }
-}
-section{
+.section-contratarme{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
     background: url('wallpaperflare.com_wallpaper.jpg') no-repeat;
     background-position: center;
@@ -222,7 +214,7 @@ section{
     width: 400px;
     height: 500px;
 }
-h2{
+#h2contratacao{
     font-size: 2em;
     color: #fff;
     text-align: center;
@@ -284,4 +276,10 @@ textarea{
     font-size: 1em;
     font-weight: 600;
     color: black;
+}
+section{
+    padding: 160px 15% 120px;
+}
+span{
+    color: #7f00ff;
 }

@@ -8,17 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Pessoal</title>
 </head>
-
 <body>
-    <h1 id="aviso">Esse site está configurado para acesso apenas em computadores</h1>
     <div class="container">
         <nav>
             <div class="logo">portfolio<b>.</b></div>
             <ul class="navItems">
-                <li><a href="index.html">inicio</a></li>
-                <li><a href="sobre.html">sobre</a></li>
-                <li><a href="habilidades.html">habilidades</a></li>
-                <li><a href="projetos.html">projetos</a></li>
+                <li><a href="#inicio">inicio</a></li>
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="#habilidades">habilidades</a></li>
+                <li><a href="#projetos">projetos</a></li>
             </ul>
             <div class="icons">
                 <a href="https://www.linkedin.com/in/guilherme-gordiano-bb97991b6/"><i class="fa fa-linkedin"></i></a>
@@ -26,7 +24,7 @@
                 <a href="https://github.com/REDGP0G"><i class="fa fa-github"></i></a>
             </div>
         </nav>
-        <div class="wrapper">
+        <div class="wrapper" id="inicio">
             <div class="cols cols0">
                 <span class="topline">Olá</span>
                 <h1>Eu sou<br> <span class="multiText">Programador</span></h1>
@@ -43,8 +41,19 @@
                 </div>
             </div>
         </div>
+        <section class="sobre" id="sobre">
+        <div class="about-img">
+            <img src="eu2.jpg" width="350px" height="600px">
+        </div>
+        <div class="about-text">
+            <h2>Sobre <span>Mim</span></h2>
+            <h4>Programador</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam rerum in asperiores modi! Expedita iusto corrupti, maiores aliquid non suscipit repellat quisquam similique facilis placeat consectetur cupiditate quis nulla quasi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam rerum in asperiores modi! Expedita iusto corrupti, maiores aliquid non suscipit repellat quisquam similique facilis placeat consectetur cupiditate quis nulla quasi.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam rerum in asperiores modi! Expedita iusto corrupti, maiores aliquid non suscipit repellat quisquam similique facilis placeat consectetur cupiditate quis nulla quasi.</p>
+        </div>
+        </section>
     </div>
-
+   
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typingEffect = new Typed(".multiText",{
