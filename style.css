@@ -39,7 +39,7 @@ nav{
 nav.sticky{
     background: var(--bg-color);
     border-bottom: 1px solid var(--main-color);
-    padding: 12px 15%;
+    padding: 12px 10%;
 }
 .logo a{
     display: flex;
@@ -313,7 +313,7 @@ textarea{
     transition: all .45s;
 }
 #btn:hover{
-    background: #000000;
+    background: var(--main-color);
     color:#fff
 }
 section{
@@ -555,7 +555,7 @@ span{
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     #menu-icon{
         display: block;
     }
