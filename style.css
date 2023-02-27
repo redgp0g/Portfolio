@@ -38,13 +38,13 @@ nav.sticky{
     border-bottom: 1px solid #7f00ff;
     padding: 12px 15%;
 }
-.logo{
+.logo a{
     display: flex;
+    text-decoration: none;
     font-size: 40px;
     font-weight: 800;
     color: #3d535f;
     letter-spacing: 3px;
-    cursor: pointer;
     text-transform: uppercase;
 }
 b{
