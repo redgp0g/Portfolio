@@ -48,7 +48,7 @@ nav.sticky{
     text-transform: uppercase;
 }
 b{
-    font-size: 70px;
+    font-size: 50px;
     color: #7f00ff;
 }
 .navItems{
@@ -70,6 +70,15 @@ b{
 .navItems a.active{
     color: #7f00ff;
 } 
+
+#menu-icon{
+    font-size: 45px;
+    color: #3d535f;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
 .icons a{
     font-size: 30px;
     color: #3d535f;
@@ -79,8 +88,8 @@ b{
 .wrapper{
     display: flex;
     width: 100%;
+    margin-top: 10vh;
     height: 100vh;
-    justify-content: center;
     align-items: center;
     padding: 0 10%;
     overflow: hidden;
@@ -94,7 +103,7 @@ b{
     border-radius: 50%;
     left: -12%;
     top: 40%;
-    background: linear-gradient(45deg,black,gray);;
+    background: linear-gradient(45deg,rgb(78, 77, 77),rgb(255, 255, 255));;
     animation: object1 6s linear infinite;
 }
 .wrapper::after{
@@ -161,7 +170,6 @@ p{
 .btns{
      width: 100%;
      position: relative;
-     left: 150px;
 }
 button{
     outline: none;
@@ -510,6 +518,14 @@ span{
     .form-box{
         width: 90vw;
     }
+    .wrapper::before{
+        height: 350px;
+        width: 350px;
+    }
+    .wrapper::after{
+        height: 75px;
+        width: 75px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -536,13 +552,13 @@ span{
     }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 1300px) {
     #menu-icon{
         display: block;
     }
     .navItems{
         position: absolute;
-        top: 100%;
+        top: -1000px;
         right: 0;
         left: 0;
         display: flex;
@@ -551,12 +567,24 @@ span{
         text-align: left;
         transition: all .45s ease;
     }
+    .navItems a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45 ease;
+        color: #3d535f;
+    }
+    .navItems a:hover{
+        color: #7f00ff;
+    }
+    .navItems a.active{
+        color: #7f00ff;
+    }
     .icons{
         position: absolute;
-        top: 380px;
+        top: -1000px;
         right: 0;
         display: flex;
-        left: 0;
         background: #f3f5f8;
         text-align: left;
         transition: all .45s ease;
@@ -566,7 +594,16 @@ span{
     }
     nav{
         background: #f3f5f8;
-    border-bottom: 1px solid #7f00ff;
-    padding: 12px 15%;
+        border-bottom: 1px solid #7f00ff;
+        padding: 12px 15%;
+    }
+    .icons.open{
+        top: 120%;
+    }
+    .navItems.open{
+        top: 100%;
+    }
+    h1{
+        font-size: 3em ;
     }
 }
