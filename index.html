@@ -35,7 +35,7 @@
                 <h1>Eu sou<br> <span class="multiText">Programador</span></h1>
                 <p>Se você está buscando alguém com qualificações para desenvolvimento de Aplicativos Web responsivos e Design atraente  para seus clientes, então está no lugar certo!</p>
                 <div class="btns">
-                    <a href="curriculo.pdf" download><button>Baixar Currículo</button></a>
+                    <button id="baixarcurriculo">Baixar Currículo</button>
                         <button onclick="location.href='#contato';">Entrar em Contato</button>
                 </div>
             </div>
@@ -189,7 +189,11 @@
     );
         alert('Mensagem Enviada com Sucesso');
         document.getElementById('form').reset();
-        })
+        });
+
+        document.getElementById('baixarcurriculo').addEventListener('click', () => {
+            alert('Currículo não adicionado');
+        });
     </script>
 </body>
 </html>
