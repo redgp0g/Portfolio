@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>Portfolio Pessoal</title>
 </head>
 <body>
@@ -166,12 +165,12 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         var typingEffect = new Typed(".multiText",{
-            strings : ["programador","designer","autodidata","leitor","atleta"],
+            strings : ["programador","designer","autodidata","leitor","esportista","músico"],
             loop : true,
             typeSpeed : 100,
             backSpeed : 100,
             backDelay : 1500
-        })
+        });
         var btn = document.getElementById('btn');
         btn.addEventListener('click', function(e){
             e.preventDefault();
@@ -189,10 +188,6 @@
     );
         alert('Mensagem Enviada com Sucesso');
         document.getElementById('form').reset();
-        });
-
-        document.getElementById('baixarcurriculo').addEventListener('click', () => {
-            alert('Currículo não adicionado');
         });
     </script>
 </body>
