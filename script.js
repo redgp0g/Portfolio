@@ -25,8 +25,8 @@ window.onscroll = () => {
   navitems.classList.remove("open");
   navicons.classList.remove("open");
 };
-document.getElementById("baixarcurriculo").addEventListener("click", () => {
-  alert("Currículo não adicionado");
+document.getElementById("verCurriculo").addEventListener("click", () => {
+  window.open("curriculo.pdf");
 });
 
 var btn = document.getElementById("btn");
