@@ -34,7 +34,7 @@
         <div class="wrapper" id="inicio">
             <div class="cols cols0">
                 <span class="topline">Olá</span>
-                <h1>Eu sou<br> <span class="multiText">Programador</span></h1>
+                <h1>Eu sou<br> <span class="multiText"></span></h1>
                 <p>Se você está buscando alguém com qualificações para desenvolvimento de Aplicativos Web responsivos e
                     Design atraente para seus clientes, então está no lugar certo!</p>
                 <div class="btns">
@@ -101,8 +101,7 @@
         </section>
         <section class="projetos" id="projetos">
             <div class="main-text">
-                <p>Projetos</p>
-                <h2><span>Mais</span> Recentes</h2>
+                <h2><span>Meus</span> Projetos</h2>
             </div>
 
             <div class="portfolio-content">
@@ -203,36 +202,9 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        var typingEffect = new Typed(".multiText", {
-            strings: ["programador", "designer", "autodidata", "leitor", "esportista", "músico"],
-            loop: true,
-            typeSpeed: 100,
-            backSpeed: 100,
-            backDelay: 1500
-        });
-        var btn = document.getElementById('btn');
-        btn.addEventListener('click', function (e) {
-            e.preventDefault();
-            var email = document.getElementById('email').value,
-                message = document.getElementById('message').value,
-                phone = document.getElementById('phone').value,
-                body = 'Email: ' + email + '<br/> Mensagem:' + message + '<br/> Número: ' + phone;
-            Email.send({
-                SecureToken: "756c46a8-e62c-4f09-9fb3-40f17e3daaab",
-                To: 'guilhermeg2004@gmail.com',
-                From: 'guilhermeg2004@gmail.com',
-                Subject: 'Mensagem sobre Contato',
-                Body: body
-            }).then(
-            );
-            alert('Mensagem Enviada com Sucesso');
-            document.getElementById('form').reset();
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
